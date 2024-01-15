@@ -1,0 +1,66 @@
+@import url(header.css);
+@import url(teampage.css);
+/* custom properties */
+:root {
+    /* colors */
+--Q-groen: #84BC2D;
+--Donkere-achtergrond: #41453B;
+--Tekst-op-donkere-achtergrond: #EEEEEE;
+--Lichte-achtergrond: #FFFFFF;
+--Teskt-op-lichte-achtergrond:	#212121;
+/* create darkmode */
+    /* font */
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  /* images */
+  /*img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+ }
+  img:hover {
+    opacity: 1;
+  }
+}
+
+body {
+    background-color: var(--Lichte-achtergrond);
+    color: var(--Teskt-op-lichte-achtergrond);
+  }
+  @media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: var(--Lichte-achtergrond);
+      color: var(--Teskt-op-lichte-achtergrond);
+    }
+  } */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: var(--Donkere-achtergrond);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: cursive;
+    
+}
+
+/* website link for image split: 
+https://css-challenges.com/css-image-splitting/ 
+https://codepen.io/supah/pen/ayOjop
+https://www.youtube.com/watch?v=oeFwC6U_woc
+*/
