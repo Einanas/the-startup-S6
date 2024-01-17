@@ -1,5 +1,5 @@
 /* @import url(header.css); */
-@import url(teampage.css);
+/* @import url(teampage.css); */
 /* custom properties */
 :root {
     /* colors */
@@ -59,12 +59,121 @@ body {
     
 }
 
-/*    FILTER    */
-.filter {
-  margin: 30px 30px;
-  /* padding: 0px, 50px; */
+.gallery {
+  padding: 2em;
+  min-height: 2em;
 }
 
+.buttons {
+  padding: 2em 0 6em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  margin: 1em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  border: none;
+  background: var(--Donkere-achtergrond);
+  color: var(--Q-groen);
+  border: 2px solid var(--Q-groen);
+  /* shadow of green around the border */
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover,
+.buttons .btn-clicked {
+  background: var(--Q-groen);
+  color: var(--Tekst-op-donkere-achtergrond);
+}
+
+.images {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.images img {
+  width: 25em;
+  margin: 1em;
+  border-radius: 0.2em;
+  transition: 0.6s;
+}
+
+/* classes for javascript */
+.images .img-expand {
+  width: 25em;
+  margin: 1em;
+}
+
+.images .img-shrink {
+  width: 0em;
+  margin: -1em;
+}
+
+@media screen and (max-width: 1250px) {
+  .images {
+    max-width: 869px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .images {
+    align-items: center;
+    flex-direction: column;
+  }
+  .images img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .buttons button {
+    width: 100%;
+    display: block;
+  }
+  .images .img-expand, .images img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    FILTER    */
+  /* .filter {
+  margin: 30px 30px;
+  padding: 0px, 50px;
+  } */
+/* 
 .icon {
   float: left;
   text-decoration: none;
@@ -141,12 +250,12 @@ body {
 .icon:has(:first-child:active)::before,
 .icon:has(:last-child:active)::before {
   transition: transform 500ms;
-}
+} */ 
 
 
 
 /*    SLUIT KNOPJE   */
-.close-up {
+/* .close-up {
   float: right;
   text-decoration: none;
   padding: 0.75em 3em;
@@ -161,12 +270,12 @@ body {
 .close-up:hover,
 .close-up:focus-visible {
   background: var(--Q-groen);
-  /* color: red; */
-}
+  color: red;
+}  */
 
 
 /*    FILTER KNOPJES    */
-#filterSelection {
+/* #filterSelection {
   float: center;
   padding: 0.75em 3em;
   background-color: var(--Donkere-achtergrond);
@@ -175,7 +284,7 @@ body {
   border-radius: 50vw;
   cursor: pointer;
   transition: background-color 250ms;
-}
+} */
 
 
 
