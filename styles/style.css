@@ -9,9 +9,24 @@
 --Lichte-achtergrond: #FFFFFF;
 --Teskt-op-lichte-achtergrond:	#212121;
 /* create darkmode */
-    /* font */
+/* font */
+/* --proxima-nova...
+-- */
 
 }
+
+/* @font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://github.com/MarvinMichel/the-sprint/blob/main/public/fonts/proxima-nova-300.woff2);
+} */
 
 /* @media (prefers-color-scheme: dark) {
   /* images */
