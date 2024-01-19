@@ -3,7 +3,7 @@ const btns = document.querySelectorAll('.buttons button');
 const imgs = document.querySelectorAll('.images img');
 
 // Add a click event to get all buttons
-for(let i = 1; i < btns.length; i++) {
+for(let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', filterImg)
 }
 
