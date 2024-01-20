@@ -59,11 +59,15 @@
   margin: -1em;
 }
 
-@media screen and (max-width: 1250px) {
-  .images {
-    max-width: 869px;
+@media screen and (max-width: 600px){
+  .buttons button {
+    width: 100%;
+    display: block;
   }
-}
+  .images .img-expand, .images img {
+    width: 100%;
+  }
+} 
 
 @media screen and (max-width: 850px) {
   .images {
@@ -76,15 +80,11 @@
   }
 }
 
-@media screen and (max-width: 600px){
-  .buttons button {
-    width: 100%;
-    display: block;
+@media screen and (max-width: 1250px) {
+  .images {
+    max-width: 869px;
   }
-  .images .img-expand, .images img {
-    width: 100%;
-  }
-} 
+}
  
  /* FILTER   
 .filter {

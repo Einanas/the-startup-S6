@@ -1,5 +1,5 @@
 /* @import url(header.css); */
-@import url(teampage.css);
+/* @import url(teampage.css); */
 
 /* custom properties */
 :root {
@@ -67,16 +67,131 @@ body {
   width: 100%;
   height: auto;
   background: var(--Donkere-achtergrond);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  font-family: cursive;
-    
+  align-items: center;
+  overflow: hidden;
+  /* font-family: cursive; */
+}
+
+.image-container {
+  width: 400px;
+  height: 400px;
+  background: url(../ai-assets/fallback.jpeg);
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.image-container .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.image-container .img span {
+  width: 20%;
+  height: 100%;
+  background: url(../assets/anne.jpg);
+  transition: 0.9s ease-in-out;
+  align-items: center;
+  background-size: cover;
+}
+
+.image-container .img span:nth-child(1) {
+  background-position: 0%;
+  transition-delay: 0s;
+}
+
+.image-container .img span:nth-child(2) {
+  background-position: 25%;
+  transition-delay: 0.1s;
+}
+
+.image-container .img span:nth-child(3) {
+  background-position: 50%;
+  transition-delay: 0.2s;
+}
+
+.image-container .img span:nth-child(4) {
+  background-position: 75%;
+  transition-delay: 0.3s;
+}
+
+.image-container .img span:nth-child(5) {
+  background-position: 100%;
+  transition-delay: 0.4s;
+} 
+
+.image-container:hover .img > span {
+  transform: translateY(-120%);
+}
+
+.image-container:hover .content-wrapper {
+  transform: translateY(0%);
+  transition: 0.9s ease-in-out;
+  transition-delay: 0.4s;
+} 
+
+.content-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  flex-direction: column;
+  background: url(../ai-assets/fallback.jpeg);
+  filter: brightness(90%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, cursive, serif;
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin-top: -5px;
+  color: #0e3742;
+  text-shadow: 1px 1px 2px var(--Q-groen);
+  
+}
+
+p {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  /* letter-spacing: 2px;
+  margin-top: 35px; */
+  line-height: 25px;
+  /* letter-spacing: 3px; */
+  color: ghostwhite;
+  /* text-align:center; */
 }
 
 
 
+
+
+
+/* link to use double images
+https://css-tricks.com/almanac/properties/b/background-image/ */
 
 /* css opmaak videos om naar te kijken
 https://www.youtube.com/watch?v=Wl6lkkEmK4M
