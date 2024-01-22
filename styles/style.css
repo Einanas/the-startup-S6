@@ -194,14 +194,14 @@ p {
   }  
 }
 
-@media (min-width: 600px) {
+@media (min-width: 450px) {
   .image-container {
     width: 350px;
     height: 350px;
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1025px) {
   .image-container {
     width: 400px;
     height: 400px;
