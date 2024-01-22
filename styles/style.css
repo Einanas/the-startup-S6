@@ -11,23 +11,22 @@
 --Teskt-op-lichte-achtergrond:	#212121;
 /* create darkmode */
 /* font */
+--h1: 'proxima-nova-bold', sans-serif;
+--p: 'proxima-nova', sans-serif;
 /* --proxima-nova...
 -- */
 
 }
 
-/* @font-face {
-  font-family: ProximaNova;
-  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
-  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
-  font-weight: 300;
-  font-style: normal
-}
 
 @font-face {
-  font-family: ProximaNova;
-  src: url(https://github.com/MarvinMichel/the-sprint/blob/main/public/fonts/proxima-nova-300.woff2);
-} */
+  font-family: 'proxima-nova';
+  src:url(../fonts/proxima-nova-300.woff2);
+}
+@font-face {
+  font-family: 'proxima-nova-bold';
+  src: url(..fonts/proxima-nova-900.woff2);
+}
 
 /* @media (prefers-color-scheme: dark) {
   /* images */
@@ -84,6 +83,7 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 10%;
 }
 
 .image-container::before {
@@ -165,19 +165,18 @@ body {
 }
 
 h1 {
-  font-family: 'Times New Roman', Times, cursive, serif;
+  font-family: var(--h1);
   font-size: 80px;
   letter-spacing: 5px;
   margin-top: -5px;
   color: #0e3742;
-  text-shadow: 1px 1px 2px var(--Q-groen);
-  
-  
+  text-shadow: 1px 1px 2px var(--Q-groen);  
 }
 
 p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--p);
   font-size: 16px;
+  box-shadow: 0 0 2em #212121;
   /* letter-spacing: 2px;
   margin-top: 35px; */
   line-height: 25px;
@@ -188,8 +187,36 @@ p {
 
 
 
+@media (min-width: 320px) {
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }  
+}
+
+@media (min-width: 600px) {
+  .image-container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 850px) {
+  .image-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* @media (hover: hover) {
+  /* … 
+} */
 
 
+
+/* Link to text effects
+https://www.youtube.com/watch?v=I_RhD99rR0c&list=PL5e68lK9hEzdGazIG1ONnb7TJ74Q69rH7&index=2 
+https://freefrontend.com/css-text-effects/page/2/*/
 
 /* link to use double images
 https://css-tricks.com/almanac/properties/b/background-image/ */
