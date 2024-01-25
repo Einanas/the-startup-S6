@@ -9,7 +9,6 @@
 --Tekst-op-donkere-achtergrond: #EEEEEE;
 --Lichte-achtergrond: #FFFFFF;
 --Teskt-op-lichte-achtergrond:	#212121;
-/* create darkmode */
 
 /* font */
 --h1: 'proxima-nova-bold', sans-serif;
@@ -45,11 +44,6 @@
   font-family: 'proxima-nova-big';
   src: url(fonts/tisa-sans-web-pro-700.woff2);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  
-}
-*/
 
 html {
   scroll-behavior: smooth;
