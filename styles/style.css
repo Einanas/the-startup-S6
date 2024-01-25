@@ -10,12 +10,14 @@
 --Lichte-achtergrond: #FFFFFF;
 --Teskt-op-lichte-achtergrond:	#212121;
 /* create darkmode */
+
 /* font */
 --h1: 'proxima-nova-bold', sans-serif;
 --p: 'proxima-nova', sans-serif;
-/* --proxima-nova...
--- */
-
+--thin: 'proxima-nova-thin', sans-serif;
+--small-italic: 'proxima-nova-small-italic', sans-serif;
+--small: 'proxima-nova-small', sans-serif;
+--big: 'proxima-nova-big', sans-serif;
 }
 
 
@@ -27,28 +29,27 @@
   font-family: 'proxima-nova-bold';
   src: url(..fonts/proxima-nova-900.woff2);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  /* images */
-  /*img {
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
- }
-  img:hover {
-    opacity: 1;
-  }
+@font-face {
+  font-family: 'proxima-nova-thin';
+  src: url(fonts/tisa-sans-web-pro-300.woff2);
+}
+@font-face {
+  font-family: 'proxima-nova-small-italic';
+  src: url(fonts/tisa-sans-web-pro-400-italic.woff2);
+}
+@font-face {
+  font-family: 'proxima-nova-small';
+  src: url(fonts/tisa-sans-web-pro-400.woff2);
+}
+@font-face {
+  font-family: 'proxima-nova-big';
+  src: url(fonts/tisa-sans-web-pro-700.woff2);
 }
 
-body {
-    background-color: var(--Lichte-achtergrond);
-    color: var(--Teskt-op-lichte-achtergrond);
-  }
-  @media screen and (prefers-color-scheme: light) {
-    body {
-      background-color: var(--Lichte-achtergrond);
-      color: var(--Teskt-op-lichte-achtergrond);
-    }
-  } */
+/* @media (prefers-color-scheme: dark) {
+  
+}
+*/
 
 html {
   scroll-behavior: smooth;
@@ -74,7 +75,7 @@ body {
   scroll-behavior: smooth;
 }
 
-
+/*     TEAMPAGE        */
 /* all */
 .image-container {
   margin: 20px 20px 20px;
@@ -150,6 +151,7 @@ body {
 } 
 
 .content-wrapper {
+  content: fit;
   box-sizing: border-box;
   display: flex;
   justify-content: left;
@@ -167,23 +169,23 @@ body {
 
 h1 {
   font-family: var(--h1);
-  font-size: 80px;
-  letter-spacing: 5px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 3px;
   margin-top: -5px;
-  color: #0e3742;
+  color: var(--Teskt-op-lichte-achtergrond);
   text-shadow: 1px 1px 2px var(--Q-groen);  
 }
 
 p {
-  font-family: var(--p);
+  font-family: var(--big);
   font-size: 16px;
-  box-shadow: 0 0 2em #212121;
-  /* letter-spacing: 2px;
-  margin-top: 35px; */
+  font-weight: 700;
+  text-shadow: 1px 1px 2px var(--Q-groen);
+  letter-spacing: 2px;
   line-height: 25px;
-  /* letter-spacing: 3px; */
-  color: ghostwhite;
-  /* text-align:center; */
+  color: var(--Teskt-op-lichte-achtergrond);
+  text-align:center;
 }
 
 /* Anne */
@@ -386,7 +388,7 @@ p {
     width: 300px;
     height: 300px;
   }
-}
+} 
 
 
 
